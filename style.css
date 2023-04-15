@@ -1,0 +1,318 @@
+html {
+  height: 100%;
+  width: 100%;
+}:root {
+  --primary-color: #8A2BE2;
+  --secondary-color: #2e0844;
+  --tertiary-color: #fff;
+}
+
+
+
+body {
+  background-image: url("bg1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Navbar styling */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, #8A2BE2, #2e0844);
+  margin-top: 0px;
+}
+
+
+nav .logo {
+  height: 90%;
+}
+
+nav .logo img {
+  height: 100%;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: #eb008d;
+}
+
+/* Select file label */
+
+label[for="file"] {
+  color: #ffffff;
+}
+
+/* Search bar styling */
+input{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ input[type="text"] {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  a {
+	color: #ffffff;
+	text-decoration: none;
+  }
+  
+  h1, h2, h3 {
+  color: #ffffff;
+	margin-bottom: 1rem;
+  }
+  
+  p {
+  color: #ffffff;
+	margin-bottom: 1rem;
+  }
+  
+  ul {
+	list-style: none;
+  }
+  
+  /* Main styles */
+  
+  main {
+	margin-top: 5rem;
+	padding: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  }
+  
+  main h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+  }
+  
+  form input[type="text"] {
+	border: none;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	width: 80%;
+	margin: 0.5rem 0;
+	font-size: 1.2rem;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  form input[type="submit"] {
+	background-color: #5f27cd;
+	border: none;
+	border-radius: 0.5rem;
+	color: #ffffff;
+	padding: 1rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+  }
+  
+  form input[type="submit"]:hover {
+	background-color: #341f97;
+  }
+  
+  
+  /* Signup styles */
+  
+  #signup {
+	margin-top: 2rem;
+	padding: 2rem;
+	background-color: #2e0844;
+	border-radius: 0.5rem;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  #signup h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+  }
+  
+  #signup label {
+	display: block;
+	margin-bottom: 0.5rem;
+  }
+  
+  #signup input[type="text"], #signup input[type="email"], #signup select, #signup textarea {
+	border: none;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	width: 100%;
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+	box-shadow: 0 2px 10px rgba(0,0, 0, 0.2);
+}
+
+#signup input[type="submit"] {
+background-color: #6C5CE7;
+color: white;
+border: none;
+border-radius: 0.5rem;
+padding: 1rem 2rem;
+font-size: 1.2rem;
+cursor: pointer;
+transition: background-color 0.5s ease;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#signup input[type="submit"]:hover {
+background-color: #a29bfe;
+}
+
+#signup label {
+font-weight: bold;
+margin-bottom: 0.5rem;
+display: block;
+}
+
+#signup select {
+appearance: none;
+-moz-appearance: none;
+-webkit-appearance: none;
+background-image: url("https://image.flaticon.com/icons/svg/60/60995.svg");
+background-repeat: no-repeat;
+background-position: right 1rem center;
+background-size: 1.2rem;
+padding-right: 2rem;
+}
+
+#signup textarea {
+resize: none;
+height: 10rem;
+}
+
+/* Footer */
+
+footer {
+background-color: #1b1b1b;
+color: white;
+padding: 2rem 0;
+text-align: center;
+font-size: 1.2rem;
+margin-top: 3rem;
+}
+
+footer p {
+margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header {
+	background: linear-gradient(to right, #9b59b6, #8e44ad);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+body {
+	margin-top: 6rem;
+}
+
+main {
+	margin: 2rem auto;
+	max-width: 800px;
+}
+
+#logo {
+	height: 30px;
+	width: auto;
+	margin-right: auto;
+	margin-left: 1rem;
+}
+
+#signup {
+	display: flex;
+	justify-content: center;
+}
+
+#signup form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+#signup input[type="text"], #signup input[type="email"], #signup select, #signup textarea {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+#signup input[type="text"], #signup input[type="email"], #signup select, #signup textarea {
+	border: none;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	font-size: 1.2rem;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	color: #000;
+	}
+	
+	#signup input[type="submit"] {
+	background-color: #eb008d;
+	color: #fff;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	}
+	
+	#signup input[type="submit"]:hover {
+	background-color: #fff;
+	color: #eb008d;
+	}
+	
+}

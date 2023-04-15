@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio Alchemist - Home</title>
+  <script src="scriptA.js"></script>
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index3.html">
+   <link rel="stylesheet" href="index5.html">
+  <link rel="stylesheet" href="styleY.css">
+  <link rel="icon" type="image/svg" href="favicon1.svg">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  
+<body>
+
+ <div class="scrollable-content">
+   
+	<header>
+		<div class="navbar">
+			<nav>
+        
+        <div class="logo">
+   <a href="index.html"> <img src="logo1.svg" alt="Logo">
+  </div>
+        
+				<ul>
+					<li><a href="index2.html">Home</a></li>
+          <li><a href ="index3.html">Vizualizer</a></li>
+					<li><a href="index4.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+  
+	<main>
+		 <input id="title" value = "Song title"> <p style="color: white;">by</p> <input id="artist" value = "Artist">
+  <button onclick="findLyrics()">Find lyrics</button>
+  <div id="output"></div>
+
+		<form>
+<!-- 	<input type="text" name="search" placeholder="Search">
+			<input type="submit" value="Search"> -->
+		</form>
+	</main>
+
+
+
+   
+	<section id="signup">
+		<form>
+			<h2>Sign up for our newsletter</h2>
+			<label for="name" style=color:white;>Name:</label>
+			<input type="text" id="name" name="name" required><br><br>
+			<label for="email" style=color:white;>Email:</label>
+			<input type="email" id="email" name="email" required><br><br>
+			<label for="country" style=color:white;>Country:</label>
+			<select id="country" name="country" required>
+			<option value="" selected disabled hidden style=color:white;>Select country</option>
+				<option value="Asia">Asia</option>
+				<option value="Africa">Africa</option>
+				<option value="North America">North America</option>
+				<option value="South America">South America</option>
+				<option value="Antarctica">Antarctica</option>
+				<option value="Europe">Europe</option>
+				<option value="Australia">Australia</option>
+			</select><br><br>
+			<label for="message" style=color:white;>Message:</label><br>
+			<textarea id="message" name="message"></textarea><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+  
+
+ </div>
+
+  <footer>2023 Audio Alchemist</footer>
+   
+</body>
+</html>
+
+
+
